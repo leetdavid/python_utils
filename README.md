@@ -31,3 +31,10 @@ Example
 ```
 $ python s3upload.py ./result ./out ./logs scraping-bucket "scrapingstuff/websiteA" -k AI76U4D2F77H8I90U4SD
 ```
+
+To call this in another python script:
+```
+import s3upload
+...
+uploadDirectory(aws_access_key, aws_secret, local_directory, bucket, destination):
+```
